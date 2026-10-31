@@ -1,0 +1,24 @@
+# Окружение и секреты
+.venv/
+.env
+# Варианты .env (.env.local, .env.prod …) — тоже секреты; шаблон .env.example публикуется
+.env.*
+!.env.example
+
+# Данные кейса: по условиям Decentrathon их нельзя публиковать, в том числе в репозитории
+data/
+
+# Результаты прогонов
+predictions*.jsonl
+outputs/
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Портативная Ollama и её модели (локально, в git не попадают)
+.tools/
+
+# Временные проверки (чистый клон и т.п.)
+.scratch/

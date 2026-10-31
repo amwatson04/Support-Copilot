@@ -1,0 +1,10 @@
+fastapi>=0.115
+uvicorn[standard]>=0.30
+pydantic>=2.7
+python-dotenv>=1.0
+google-genai>=2.0
+pytest>=8.0
+httpx>=0.27
+# Только для frontend/ — backend Streamlit не импортирует
+streamlit>=1.40
+pandas>=2.0
